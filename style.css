@@ -9,14 +9,22 @@ header{
 }
 
 h1{
-	font-size: 2.5em;
+	font-family: 'Lobster';
+	font-size: 6em;
 	padding: 10px;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Yellowtail';
 }
 
 /*Nav*/
 nav{
+	font-family: 'Lobster';
 	padding: 30px;
 	text-align: center;
+	
 }
 
 nav ul{
@@ -24,21 +32,30 @@ nav ul{
 }
 
 nav ul li{
-	font-size: 1.2em;
+	font-size: 1.6em;
 	display: inline-block;
-	padding: 2px 30px;
+	padding: 2px 50px;
 }
 
 nav ul li a{
 	text-decoration: none;
 }
 
-/*Body*/
+nav li+li{
+	border-left: 1px solid black;
+}
 
+/*Body*/
+body{
+	background-image: url(assets/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .mountain{
-	font-size: 2.5em;
-	margin-left:15%;
-	margin-right: 15%;
+	font-family: 'Lobster';
+	font-size: 2.8em;
+	margin-left:10%;
+	margin-right: 10%;
 	overflow: hidden;
 	color: white;
 	padding: 40px;
@@ -53,13 +70,35 @@ nav ul li a{
 
 }
 main{
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-top: 5%;
+	
+	min-height: 800px;
+	
+	background-image: url(assets/circleroad.jpg);
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:10px;
+	margin-left: 8%;
+	margin-right: 8%;
 	font-size: 1.5em;
+	
 }
 .text{
+	color: black;
+	
 	line-height: 2.5;
 	text-align: center;
+
+}
+
+.aboutme{
+	font-family: 'Ubuntu';
+	padding: 20px;
+	border-radius: 1%;
+	opacity: .70;
+	background-color: white;
+	margin-top: 7%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
