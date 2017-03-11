@@ -16,11 +16,23 @@ h1{
 }
 
 h2{
+
 	font-family: 'Yellowtail';
+	text-align: center;
+	font-size: 3em;
 }
 
+#whoknows{
+	margin-top: 5%;
+}
+
+#findout{
+	margin-top: 15%;
+	margin-bottom: 20%;
+}
 /*Nav*/
 nav{
+	height: 50px;
 	font-family: 'Lobster';
 	padding: 30px;
 	text-align: center;
@@ -29,6 +41,7 @@ nav{
 
 nav ul{
 	list-style-type: none;
+	margin:10px;
 }
 
 nav ul li{
@@ -39,21 +52,27 @@ nav ul li{
 
 nav ul li a{
 	text-decoration: none;
+
 }
+
+
 
 nav li+li{
 	border-left: 1px solid black;
+	margin-left: 20px;
 }
 
 /*Body*/
+
 body{
 	background-image: url(assets/background.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 .mountain{
 	font-family: 'Lobster';
-	font-size: 2.8em;
+	font-size: 5em;
 	margin-left:10%;
 	margin-right: 10%;
 	overflow: hidden;
@@ -65,28 +84,26 @@ body{
 	text-align: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	text-shadow: 2px 2px black;
 
 }
-main{
+#aboutme{
 	
 	min-height: 800px;
-	
-	background-image: url(assets/circleroad.jpg);
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding:10px;
 	margin-left: 8%;
 	margin-right: 8%;
-	font-size: 1.5em;
+	font-size: 1.8em;
+
 	
 }
 .text{
 	color: black;
-	
-	line-height: 2.5;
+	line-height: 2;
 	text-align: center;
 
 }
@@ -97,8 +114,46 @@ main{
 	border-radius: 1%;
 	opacity: .70;
 	background-color: white;
-	margin-top: 7%;
+	
 	margin-left: 20%;
 	margin-right: 20%;
 }
 
+.hidden{
+	opacity: 0;
+}
+
+.fadein {
+	opacity: 0;
+}
+figure{
+	padding: 40px;
+	margin-left: 36%;
+	margin-bottom: 9%;
+	
+}
+#contactinfo a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Yellowtail";
+	font-size:2em;
+}
+#contactinfo a img{
+	padding: 10px;
+	height: 200px;
+	width: 200px;
+}
+
+
+.resumelink{
+	font-size: 1.7em;
+	text-decoration: none;
+	font-family: "Yellowtail";
+}
+
+footer{
+	margin-top: 10%;
+	
+
+}

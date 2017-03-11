@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Joseph Harskamp
-		 March 8 2017
-		 My personal Page
-	 -->
-	 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster|Yellowtail|Ubuntu" rel="stylesheet">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#header1').animate({'opacity':'1'},1000);
+	$('#header2').animate({'opacity':'1'},3000);
+	$('#nav').animate({'opacity':'1'},4000);
+
+	$(function(){
+	$('li').hover(function(){
+	    $(this).animate({'z-index':'1','font-size':'2em'},50);
+	      },
+	      function(){
+	      $(this).animate({'z-index':'0','font-size':'1.6em'},50);
+	    });
+	});
+
+    $(window).scroll(function(){
+    	$('.hidden').each(function(i){
+    		var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    		var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    		if (bottom_of_window > bottom_of_object){
+    			$(this).animate({'opacity':'1'},1000);
+    		}
+    	});
+    });
+
+
+});
+</script>
+	 <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Amatic+SC|Lobster|Ubuntu|Yellowtail" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>My Work</title>
+	<title>Joseph Harskamp</title>
 </head>
 <body>
 
 	<header>
-		<h1>Joseph Harskamp</h1>
-		<h2>Professional Web Developer</h2>
-
+		<h1 id="header1" class="fadein">Joseph Harskamp</h1>
+		<h2 id="header2" class="fadein">Professional Web Developer</h2>
 	</header>
 
-	<nav>
+	<nav class="fadein" id="nav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="work.html">About Me</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
-
-	<main class="text">
+	<h2>This is me</h2>
+	<main id=aboutme class="text">
 		<div class="aboutme">
 			<p>My name is Joseph Harskamp, though my friends just call me Joe. I grew up on a farm in Northwest Iowa, but currently live in Northern Virginia with my wife and dog.</p> 
 			<p>I learned a lot living on a farm, like the value of a solid work ethic, honesty, and respect. Those values stayed with me, and are part and parcel of who I am. I enjoy tinkering with things, whether it's an old car, a website, or some old gadget I've found, my curiosity is what fuels my passion. I love to take things apart, examine their inner workings, and reassemble them to a state better than before.</p>
-		    <p>I love learning and growing in every aspect of my life. I enjoy hiking, video games, craft beer, board games, and of course, programming.</p>
+		    <p>I love learning and growing in every aspect of my life. I enjoy hiking, video games, craft beer, board games, and of course, programming. I'm a bit quirky, with an artistic streak, but little skill in physical mediums like paints or pencils, so I use pixels to express myself. I like to think that I look at things from different angles than most people. I also have great people skills, and like to be around others, though I'm just as fine all by myself. </p>
+		    <p>If you want a resume, there's a link on this page, or you can contact me for any information you may need.</p>
+		</div>
+
+		<div>
+			<h2>Patented Resume Dispenser</h2>
+			
+			<a class="resumelink" href="assets/resume.pdf" download="resume.pdf">Click For Resume</a>
+
 		</div>
 	</main>
-
+	<footer class="text">
+		<small>
+			<p>Joseph Harskamp</p>
+			<p>2017</p>
+		</small>
+	</footer>
 </body>
 </html>
