@@ -55,7 +55,13 @@ nav ul li a{
 
 }
 
+nav ul li a:link{
+	color: blue;
+}
 
+nav ul li a:visited{
+	color: blue;
+}
 
 nav li+li{
 	border-left: 1px solid black;
@@ -67,24 +73,23 @@ nav li+li{
 body{
 	background-image: url(assets/background.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 }
 .mountain{
 	font-family: 'Lobster';
 	font-size: 5em;
-	margin-left:10%;
-	margin-right: 10%;
-	overflow: hidden;
+	margin-left:8%;
+	margin-right: 8%;
+	overflow: visible;
 	color: white;
 	padding: 40px;
 	background-image: url(assets/valley.jpg);
 	min-height: 700px;
-	line-height: 700px;
 	text-align: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	text-shadow: 2px 2px black;
 
 }
@@ -114,7 +119,6 @@ body{
 	border-radius: 1%;
 	opacity: .70;
 	background-color: white;
-	
 	margin-left: 20%;
 	margin-right: 20%;
 }
@@ -128,7 +132,7 @@ body{
 }
 figure{
 	padding: 40px;
-	margin-left: 36%;
+	text-align: center;
 	margin-bottom: 9%;
 	
 }
